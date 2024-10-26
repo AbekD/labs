@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Circle</title>
+	</head>
+	<body>
+		<script>
+			const colors = ['yellow', 'purple', 'green', 'red', 'orange', 'blue']
+			function getRandomNumber(min, max) {
+				return Math.floor(Math.random() * (max - min)) + min
+			}
+			function createRandomCircle() {
+				const circle = document.createElement('div')
+				const diameter = getRandomNumber(50, 200)
+				circle.style.width = `${diameter}px`
+				circle.style.height = `${diameter}px`
+				circle.style.borderRadius = '50%'
+				circle.style.backgroundColor =
+					colors[getRandomNumber(0, colors.length - 1)]
+				circle.style.position = 'absolute'
+				circle.style.left = `${getRandomNumber(
+					0,
+					window.innerWidth - diameter
+				)}px`
+				circle.style.top = `${getRandomNumber(
+					0,
+					window.innerHeight - diameter
+				)}px`
+				return circle
+			}
+			function drawCircles(count) {
+				for (let i = 0; i < count; i++) {
+					const circle = createRandomCircle()
+					document.body.appendChild(circle)
+				}
+			}
+			drawCircles(20)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Table</title>
+	</head>
+	<body>
+		<h1>Task 6</h1>
+		<table id="age-table">
+			<tr>
+				<td>Age</td>
+				<td>Information</td>
+			</tr>
+			<tr>
+				<td><label for="age1">Age 1:</label></td>
+				<td>21</td>
+			</tr>
+			<tr>
+				<td><label for="age2">Age 2:</label></td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<td><label for="age3">Age 3:</label></td>
+				<td>18</td>
+			</tr>
+		</table>
+		<form name="search">
+			<input type="text" placeholder="Search" />
+			<input type="submit" value="Submit" />
+			<input type="reset" value="Reset" />
+		</form>
+		<script>
+			const ageTable = document.getElementById('age-table')
+			const label = ageTable.querySelectorAll('label')
+			const td = ageTable.querySelector('td')
+			const searchForm = document.forms['search']
+			const inputs = searchForm.querySelectorAll('input')
+			const first = inputs[0]
+			const last = inputs[inputs.length - 1]
+		</script>
+	</body>
+</html>
