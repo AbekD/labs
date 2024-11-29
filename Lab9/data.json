@@ -1,0 +1,30 @@
+[
+	{
+		"name": "Almaty",
+		"country": "Kazakhstan"
+	},
+	{
+		"name": "Astana",
+		"country": "Kazakhstan"
+	},
+	{
+		"name": "Kyzylorda",
+		"country": "Kazakhstan"
+	},
+	{
+		"name": "Shymkent",
+		"country": "Kazakhstan"
+	},
+	{
+		"name": "Moscow",
+		"country": "Russia"
+	},
+	{
+		"name": "Paris",
+		"country": "France"
+	},
+	{
+		"name": "London",
+		"country": "Great Britain"
+	}
+]
